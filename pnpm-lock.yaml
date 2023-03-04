@@ -13,6 +13,7 @@ specifiers:
   eslint-plugin-n: ^15.0.0
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-react: ^7.32.2
+  nosleep.js: ^0.12.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-geolocated: ^4.0.3
@@ -21,6 +22,7 @@ specifiers:
   vite: ^4.1.0
 
 dependencies:
+  nosleep.js: 0.12.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-geolocated: 4.0.3_react@18.2.0
@@ -2047,6 +2049,10 @@ packages:
   /node-releases/2.0.10:
     resolution: {integrity: sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==}
     dev: true
+
+  /nosleep.js/0.12.0:
+    resolution: {integrity: sha512-9d1HbpKLh3sdWlhXMhU6MMH+wQzKkrgfRkYV0EBdvt99YJfj0ilCJrWRDYG2130Tm4GXbEoTCx5b34JSaP+HhA==}
+    dev: false
 
   /object-assign/4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}

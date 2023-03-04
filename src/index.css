@@ -14,9 +14,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+body, html {
   margin: 0;
   padding: 0;
+}
+
+body {
+  height: 100vh;
+  position: relative;
 }
 
 @media (prefers-color-scheme: light) {
