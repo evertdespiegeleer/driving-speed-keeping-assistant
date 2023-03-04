@@ -19,9 +19,12 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-deploy:
     name: Build and deploy
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -38,7 +41,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v1
         with:
-          name: production-files
+          name: github-pages
           path: ./dist
       - name: Setup Pages
         uses: actions/configure-pages@v3  
