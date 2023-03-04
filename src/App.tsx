@@ -32,7 +32,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
         <p>
-          {JSON.stringify({isGeolocationAvailable, isGeolocationEnabled, speed: coords?.speed * 3.6}, null, 2)}
+          {JSON.stringify({isGeolocationAvailable, isGeolocationEnabled, speed: coords?.speed ?? 0 * 3.6}, null, 2)}
         </p>
       </div>
       <p className="read-the-docs">
